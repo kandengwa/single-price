@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --prim-cyan: hsl(179, 62%, 43%);
+  --prim-Bright-Yellow: hsl(71, 73%, 54%);
+  --neu-Light-Gray: hsl(204, 43%, 93%);
+  --neu-Grayish-Blue: hsl(218, 22%, 67%);
+
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1rem;
+  margin: 40px 0 10px 0;
+  font-family: "karla", sans-serif;
+  background-color: var(--neu-Light-Gray);
+}
+
+.top-box {
+  height: 275px;
+  width: 50%;
+  /* margin: 1rem 1rem 0 5rem; */
+  padding: 3rem 1rem 3rem 3rem;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--white);
+}
+
+h1 {
+  color: var(--prim-cyan);
+  padding: 0 0 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--prim-Bright-Yellow);
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+ul li {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.bottom-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 83.5%;
+  gap: 0;
+  margin: 0 auto;
+}
+
+.left-container {
+  width: 30%;
+  height: 350px;
+  background-color: var(--prim-cyan);
+  border-radius: 0 0 0 10px;
+  padding: 10px;
+}
+
+.right-container {
+  width: 30%;
+  height: 350px;
+  background-color: var(--prim-cyan);
+  border-radius: 0 0 10px 0;
+  opacity: 0.7;
+  color: var(--white);
+  padding: 0 0 0 50px;
+}
+
+.question {
+  margin-left: -5px; /*ask question for this*/
+}
+
+h4 {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin: 2rem 3rem 1rem 2rem;
+}
+
+span {
+  font-size: 3rem;
+  color: var(--white);
+  margin: 2rem 0.5rem 3rem 0;
+}
+
+p {
+  color: var(--white);
+  margin: 1rem 0 2rem 2rem;
+}
+
+button {
+  background-color: var(--prim-Bright-Yellow);
+  height: 45px;
+  width: 250px;
+  margin: 1rem 0 0 2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+a {
+  color: white;
+}
+
+@media only screen and (max-width: 844px) {
+  .top-box {
+    flex-direction: row;
+    width: 350px;
+    height: 425px;
+    /* padding: 50px 0; */
+    border-radius: 10px 10px 0 0;
+  }
+
+  .left-container {
+    width: 350px;
+    height: 400px;
+    border-radius: 0 0 0 0;
+  }
+
+  .right-container {
+    width: 350px;
+    height: 400px;
+    border-radius: 0 0 10px 10px;
+  }
+}
